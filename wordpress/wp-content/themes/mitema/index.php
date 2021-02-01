@@ -31,7 +31,7 @@ do_action( 'qm/debug', 'Este es mi error' );
 <?php endwhile; endif; ?>
 <?php //the_posts_pagination(array('screen_reader_text' => 'Mi paginación')); ?>
 </main>
-
+<?php get_sidebar();?>
 <aside>
 <?php //get_sidebar('primary-sidebar'); ?>
 </aside>

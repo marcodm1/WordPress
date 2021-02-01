@@ -54,7 +54,7 @@ endif; // myfirsttheme_setup
 
 
 
-function diw_sidebar_widgets() {
+function diw_sidebar_widgets() { // esta funcion registra un sidebar con varios comos
   register_sidebar(array(
     'id'            => 'primary-sidebar',
     'name'          => esc_html( 'Primary Sidebar', 'diw' ),
@@ -65,7 +65,7 @@ function diw_sidebar_widgets() {
     'after_title'   => '</h3>',
   ));
 }
-//add_action('widgets_init', 'diw_sidebar_widgets');
+//add_action('widgets_init', 'diw_sidebar_widgets'); // un hook
 
 
 
