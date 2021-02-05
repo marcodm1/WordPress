@@ -29,14 +29,12 @@ do_action( 'qm/debug', 'Este es mi error' );
 
   </article>
 <?php endwhile; endif; ?>
-<?php //the_posts_pagination(array('screen_reader_text' => 'Mi paginación')); ?>
+<?php the_posts_pagination(array('screen_reader_text' => 'Mi paginación')); ?>
 </main>
 <?php get_sidebar();?> <!-- carga el fichero sidebar.php -->
-<aside>
-<?php //get_sidebar('primary-sidebar'); ?>
-</aside>
 
 </div>
+<?php get_sidebar('segundo'); ?>
 
 <?php
 get_footer();
