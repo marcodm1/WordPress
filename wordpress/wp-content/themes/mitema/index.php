@@ -5,8 +5,8 @@ do_action( 'qm/debug', 'Este es mi error' );
 
 <?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-<?php //get_search_form(); ?>
-<div class="quitado-with_sidebar">
+<?php get_search_form(); ?>
+<div class="with_sidebar">
 
 <main>
 <?php if (have_posts()):  while (have_posts()): the_post(); ?>
@@ -31,7 +31,7 @@ do_action( 'qm/debug', 'Este es mi error' );
 <?php endwhile; endif; ?>
 <?php //the_posts_pagination(array('screen_reader_text' => 'Mi paginación')); ?>
 </main>
-<?php get_sidebar();?>
+<?php get_sidebar();?> <!-- carga el fichero sidebar.php -->
 <aside>
 <?php //get_sidebar('primary-sidebar'); ?>
 </aside>
@@ -40,3 +40,5 @@ do_action( 'qm/debug', 'Este es mi error' );
 
 <?php
 get_footer();
+
+
