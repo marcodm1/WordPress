@@ -1,9 +1,14 @@
 <?php
 get_header();
+
+// Si queremos depurar con el plugin Query Monitor
 do_action( 'qm/debug', 'Este es mi error' );
 ?>
 
-<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+<nav>
+  <?php // El menú de navegación posiblemente sería mejor en header.php ?>
+  <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+</nav>
 
 <?php get_search_form(); ?>
 <div class="with_sidebar">
@@ -31,12 +36,27 @@ do_action( 'qm/debug', 'Este es mi error' );
 <?php endwhile; endif; ?>
 <?php the_posts_pagination(array('screen_reader_text' => 'Mi paginación')); ?>
 </main>
-<?php get_sidebar();?> <!-- carga el fichero sidebar.php -->
+
+<?php get_sidebar(); ?>
 
 </div>
+
 <?php get_sidebar('segundo'); ?>
 
 <?php
 get_footer();
+
+// Si no cierro la etiqueta de php, 
+// los intros finales no se añaden en el HTML resultante.
+// Está aceptado en el estándard PHP
+
+
+
+
+
+
+
+
+
 
 
