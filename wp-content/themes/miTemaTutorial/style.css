@@ -2,11 +2,103 @@
 Theme Name: miTemaTutorial
 Theme URI: https://tutorialeswp.com
 Author: Marco Dominguez
-Author URI: https://tutorialeswp.com/javier-crego/
-Description: Creacion de cero de mi primer tema
+Author URI: https://github.com/marcodm1
+Description: Creacion de mi primer tema con un tutorial
 Version: 1.0
 License: 
 License URI: 
 Tags: 
 Text Domain: 
 */
+
+/* toda la pagina */
+html,body {
+    height:100%;
+    background-color: rgb(209, 240, 208);
+    border: turquoise solid 2px;
+}
+
+/* encabezado */
+header {
+    display:block;
+    background:#95d389;
+    padding:10px 0px;
+    border: red solid 2px;
+}
+
+/* titulo del encabezado */
+#header h1{
+	color: black;
+    font-size: 30px;
+    line-height: 1.25;
+}
+
+/* menu del medio */
+.content-area {
+    width: 80%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+    border: yellow solid 2px;
+}
+
+/* menu de la derecha vertical */
+aside {
+    float: right;
+    width: 19%;
+	background: #95d389;
+    border: blue solid 2px;
+}
+
+/* titulos del menu de la derecha */
+.sidebar h2{
+	border-top: 4px solid #1a1a1a;
+    margin-bottom: 1.5em;
+    padding-top: 0.75em;
+    border: orange solid 2px;
+}
+
+/* el buscador y los ul*/
+.sidebar ul{
+	list-style:none;
+    border: violet solid 2px;
+    margin-left: -30px;
+}
+
+/* cada titulo de cada post */
+.entry-title {
+    font-family: Montserrat, "Helvetica Neue", sans-serif;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1em;
+    border: yellowgreen solid 2px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* la descripcon que esta debajo del titulo*/
+.description {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    border: black solid 2px;
+}
+
+/* para el footer */
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: #58aa47;
+    text-align: center;
+    color: rgb(42, 80, 45);
+    border: black solid 2px;
+}

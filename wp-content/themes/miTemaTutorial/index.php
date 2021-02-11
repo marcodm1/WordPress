@@ -1,46 +1,45 @@
-<!-- formado por 4 partes. 
-Header: es la cabecera WordPress, y para mostrarla tendremos que hacer una llamada a la función get_header()
-Content: aquí irá el cuerpo de nuestra web, llamadas a partes de plantillas, y donde se realizará el loop de WordPress.
-Sidebar: si deseamos que nuestro blog tenga la típica barra lateral o sidebar, donde suele ir el archivo de entradas y 
-            otros bloques característicos, lo haremos en este apartado haciendo una llamada a la función get_sidebar()
-Footer: es el final o pie de nuestro blog o página de WordPress. Lo llamaremos con la función get_footer()
--->
-
-<!-- lo mas basico seria algo asi: -->
-
-
-
 <?php
 /*
 **** MAIN TEMPLATE ****
 */
-/*--------- HEADER --------------*/
-get_header();
-/*--------- CONTENT -------------*/
+?>
+<!-- Cabecera -->
+<header>
+	<?php get_header(); ?>
+</header>
+<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		
+<?php 
+		if ( have_posts() ) : 
 
 			// loop.
 			while ( have_posts() ) :
 				
 				the_post();
-
-				the_title();
-				the_content('Continua leyendo...', get_the_title());
-
-
-				// Fin loop.
+				echo "-----------------Aqui separamos en el loop cada post--------------------";
+				//incluimos el template content.php
+				get_template_part( 'content' );
+				
+			// Fin loop.
 			endwhile;
-
-
-/*--------- SIDEBAR -------------*/
-get_sidebar();
-/*--------- FOOTER -------------*/
-get_footer();
-
-
+			
+		else :
+			//incluimos el template content-none.php
+			get_template_part( 'content', 'none' );
+		endif;			
+			
 ?>
+		</main><!-- .site-main -->
+</div><!-- .content-area -->
 
-
-
+<aside class="sidebar">
+	<?php get_sidebar();?>
+</aside>
+<!-- Pie de pagina -->
+<footer>
+    <?php get_footer(); ?>
+</footer>
 
 
 
