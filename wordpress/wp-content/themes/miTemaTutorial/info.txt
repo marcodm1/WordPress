@@ -1,0 +1,67 @@
+<!-- formado por 4 partes. 
+Header: es la cabecera WordPress, y para mostrarla tendremos que hacer una llamada a la función get_header()
+Content: aquí irá el cuerpo de nuestra web, llamadas a partes de plantillas, y donde se realizará el loop de WordPress.
+Sidebar: si deseamos que nuestro blog tenga la típica barra lateral o sidebar, donde suele ir el archivo de entradas y 
+            otros bloques característicos, lo haremos en este apartado haciendo una llamada a la función get_sidebar()
+Footer: es el final o pie de nuestro blog o página de WordPress. Lo llamaremos con la función get_footer()
+-->
+
+<!-- lo mas basico seria algo asi: -->
+
+
+Plantillas comunes de WordPress
+Las plantillas más comúnmente usadas para crear temas con WordPress, son las siguientes:
+
+
+rtl.css
+La hoja de estilo de derecha a izquierda se incluye automáticamente si la dirección del texto del idioma de nuestra página web es de derecha a izquierda.
+comments.php
+La plantilla de comentarios.
+front-page.php
+La plantilla de la página principal siempre se usa como página principal de la web si existe, independientemente de la configuración de los ajustes de lectura en la administración de nuestro WordPress.
+home.php
+La plantilla de la página de inicio es la página principal de forma predeterminada. Si no configuramos WordPress para usar una página principal estática, esta plantilla se usa para mostrar las últimas entradas.
+header.php
+Esta es la plantilla del encabezado donde pondremos el logo, las etiquetas metas, los enlaces a hojas de estilo y scripts, y otros datos.
+sidebar.php
+Esta es la plantilla para la barra lateral (o sidebar).
+footer.php
+Esta es la plantilla del pie de nuestra web.
+singular.php
+La plantilla singular se usa cuando las plantillas single.php o page.php no se encuentran. Si singular.php no se encuentra, entonces se utilizará directamente el archivo index.php.
+single.php
+Esta plantilla es la usada para mostrar una entrada de nuestro blog (o posts).
+single- {post-type} .php
+Esta plantilla la usaremos para mostrar una entrada personalizada (o custom post). Por ejemplo, single-book.php se usaría para mostrar publicaciones individuales de un tipo de publicación personalizado llamado libro . En caso de que una entrada o publicación personalizada no tenga plantilla creada, se utiliza index.php.
+archive.php
+Esta plantilla se utiliza queremos mostrar un archivo de entradas o publicaciones por categoría, autor o fecha. Pero se anulará si más plantillas específicas están presentes como category.php, author.php y date.php.
+archive- {post-type} .php
+Esta plantilla la usaremos para mostrar un archivo de entradas personalizadas (o custom post). Por ejemplo, archive-books.php se usaría para mostrar un archivo de entradas o publicaciones personalizadas denominadas libros. En caso de que no exista la plantilla archive-{post-type}.php, se utiliza la plantilla archive.php.
+page.php
+Esta plantilla se usa cuando vemos una página de WordPress.
+page- {slug} .php
+La plantilla de página con slug, se usa cuando queremos ver una página específica, por ejemplo, una con el slug "about" (page-about.php).
+category.php
+Esta es la plantilla para mostrar un archivo de entradas por categoría.
+tag.php
+Esta es la plantilla para mostrar un archivo de entradas por etiqueta.
+taxonomy.php
+Esta es la plantilla para mostrar un archivo de entradas por taxonomía.
+author.php
+La plantilla de página de autor se usa cuando queremos cargar una página de autor.
+date.php
+La plantilla de fecha / hora se utiliza cuando las entradas queremos listarlas por fecha u hora. Por ejemplo, las páginas generadas con estas fechas:
+https://example.com/blog/2020/
+https://example.com/blog/2020/01/
+https://example.com/blog/2020/01/17/
+
+search.php
+Cuando realizamos una búsqueda, usaremos esta plantilla.
+attachment.php
+La plantilla de archivo adjunto se utiliza al ver un archivo adjunto único como una imagen, pdf u otro archivo multimedia.
+image.php
+Esta plantilla es una versión más específica de la plantilla attachment.php, y se utiliza cuando se visualiza un archivo adjunto de imagen. Si no la tenemos creada, WordPress usará attachment.php por defecto.
+404.php
+La plantilla 404 se usa cuando WordPress no puede encontrar una entrada, página u otro contenido.
+functions.php
+Esta plantilla es la que comúnmente usaremos para crear funciones personalizadas, ganchos (o hooks), filtros, configuraciones, ajustes,...
