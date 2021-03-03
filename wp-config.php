@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'HdwY!`BH*Hd8-eCo}_I5`x7a16$b8?Kx8!wti/v9W*vBTC;+[eCiQ6)Y=EN3`hQ[' );
-define( 'SECURE_AUTH_KEY',  'XrAJ;>(^%Ky{wDt?Ine:-cqfr)hQh#`4Ld589B@G@C#=bg%&>{KlwkZzuU2PR15c' );
-define( 'LOGGED_IN_KEY',    '}}Hi|{}NUf?od@!C{oO4BA]*vi^}(:~zdXkWlut?Wg}O~lYE:DriD: Da&0%Do5.' );
-define( 'NONCE_KEY',        '$^Mne(Ro5VuT{%V~x6:B#Lb<0?*i[V4c4C%<Y_E[R1A(agL8b[.L@26Ul#ab|M/Y' );
-define( 'AUTH_SALT',        'm]e:`VpUt_U?v)Tg:8Hx=7ka81HkG0+^%ArX?=]^IZ5`L&jdu)2V:&?O*BXBU wF' );
-define( 'SECURE_AUTH_SALT', 'Y>:bTST(hSl%75YK.)2+3-O~cCL-.E[b/{4_ 061_~=#HXE~.1,d6: @I/~Pp0?0' );
-define( 'LOGGED_IN_SALT',   'b {)JtjY]`VDp$M~F`kux*<B&GqCFPoF<4D+CBz4$p|D|i3b;NyCmP?2AY_(plBX' );
-define( 'NONCE_SALT',       '[Or} ?95tN!^ o7eI`~K@{)_,5c}ka[oTD671QnI]R3Q%sUU/-8sk!f!rby$])^B' );
+define( 'AUTH_KEY',         'YEUClAX5A;-pe!2h|Zv5*07}hp5#ke1p3S}kb+@$rw$#A!~x!5 &ow0[B*EZESmb' );
+define( 'SECURE_AUTH_KEY',  ';doZvr$B_W-Tpy{v8ZkJ)-z7DPqiEjE%EO)S<*J^yy{ISYrwK2Pjt!F/MLCcU$g8' );
+define( 'LOGGED_IN_KEY',    ']z^?>ng>Z_W,7Z0>,e AWeNUK|C+ZhN#Y0UAyG:l0}<(i(5!Z=3d.PaUNA14;{2^' );
+define( 'NONCE_KEY',        '!`<p6fph%-s(mRAy,V&uhnw?X*^^Sw1^.e[|AnBR_i~0*XT.0GIp$O;+x:w9)$GJ' );
+define( 'AUTH_SALT',        ')S3sVL]+~m]a-Q65pT8<E2g`:TQED.XB4-@rg@v^Pwng;6!n%2%*C;Kat(p5^ >R' );
+define( 'SECURE_AUTH_SALT', '_!!b,<C+3zrT!!Tyn}zNYjc8o*Ez;^6anl*>z/?<:J&B&4.7Y;*=f556tF2Ctick' );
+define( 'LOGGED_IN_SALT',   '``1P{qVO(YJ*25%I#7mI&zp?c]`iFD[3UlS|;i]=;P|_MI/WY!em5zi 7Dqdyb U' );
+define( 'NONCE_SALT',       '>rc6KF@I{Y9ypgEE6pg.?chRVSY-5Wmt<dA ~b0#>zq)E.E5eqg:x~K8x&8rS=>#' );
 
 /**#@-*/
 
@@ -77,8 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -89,6 +88,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-
-//define('WP_HOME','http://localhost/WordPress/');
-//define('WP_SITEURL','http://localhost/WordPress/');

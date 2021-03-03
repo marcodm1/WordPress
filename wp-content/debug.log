@@ -491,3 +491,27 @@
 [25-Feb-2021 13:25:02 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\miTemaTutorial\index.php on line 45
 [25-Feb-2021 13:31:31 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\miTemaTutorial\index.php on line 45
 [25-Feb-2021 13:32:47 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\wordpress\wp-content\themes\miTemaTutorial\index.php on line 45
+[02-Mar-2021 19:21:46 UTC] PHP Warning:  mysqli_query(): (HY000/6): Error on delete of 'C:\xampp\tmp\#sql4c288_39_1.MAI' (Errcode: 13 &quot;Permission denied&quot;) in C:\xampp\htdocs\WordPress\wp-includes\wp-db.php on line 2056
+[02-Mar-2021 19:21:46 UTC] PHP Stack trace:
+[02-Mar-2021 19:21:46 UTC] PHP   1. {main}() C:\xampp\htdocs\WordPress\wp-admin\index.php:0
+[02-Mar-2021 19:21:46 UTC] PHP   2. wp_dashboard() C:\xampp\htdocs\WordPress\wp-admin\index.php:181
+[02-Mar-2021 19:21:46 UTC] PHP   3. do_meta_boxes() C:\xampp\htdocs\WordPress\wp-admin\includes\dashboard.php:256
+[02-Mar-2021 19:21:46 UTC] PHP   4. wp_dashboard_site_activity() C:\xampp\htdocs\WordPress\wp-admin\includes\template.php:1389
+[02-Mar-2021 19:21:46 UTC] PHP   5. wp_dashboard_recent_posts() C:\xampp\htdocs\WordPress\wp-admin\includes\dashboard.php:904
+[02-Mar-2021 19:21:46 UTC] PHP   6. WP_Query->__construct() C:\xampp\htdocs\WordPress\wp-admin\includes\dashboard.php:955
+[02-Mar-2021 19:21:46 UTC] PHP   7. WP_Query->query() C:\xampp\htdocs\WordPress\wp-includes\class-wp-query.php:3559
+[02-Mar-2021 19:21:46 UTC] PHP   8. WP_Query->get_posts() C:\xampp\htdocs\WordPress\wp-includes\class-wp-query.php:3448
+[02-Mar-2021 19:21:46 UTC] PHP   9. _prime_post_caches() C:\xampp\htdocs\WordPress\wp-includes\class-wp-query.php:3021
+[02-Mar-2021 19:21:46 UTC] PHP  10. update_post_caches() C:\xampp\htdocs\WordPress\wp-includes\post.php:7402
+[02-Mar-2021 19:21:46 UTC] PHP  11. update_object_term_cache() C:\xampp\htdocs\WordPress\wp-includes\post.php:7015
+[02-Mar-2021 19:21:46 UTC] PHP  12. wp_get_object_terms() C:\xampp\htdocs\WordPress\wp-includes\taxonomy.php:3565
+[02-Mar-2021 19:21:46 UTC] PHP  13. get_terms() C:\xampp\htdocs\WordPress\wp-includes\taxonomy.php:2113
+[02-Mar-2021 19:21:46 UTC] PHP  14. WP_Term_Query->query() C:\xampp\htdocs\WordPress\wp-includes\taxonomy.php:1225
+[02-Mar-2021 19:21:46 UTC] PHP  15. WP_Term_Query->get_terms() C:\xampp\htdocs\WordPress\wp-includes\class-wp-term-query.php:297
+[02-Mar-2021 19:21:46 UTC] PHP  16. wpdb->get_results() C:\xampp\htdocs\WordPress\wp-includes\class-wp-term-query.php:727
+[02-Mar-2021 19:21:46 UTC] PHP  17. wpdb->query() C:\xampp\htdocs\WordPress\wp-includes\wp-db.php:2696
+[02-Mar-2021 19:21:46 UTC] PHP  18. wpdb->_do_query() C:\xampp\htdocs\WordPress\wp-includes\wp-db.php:1945
+[02-Mar-2021 19:21:46 UTC] PHP  19. mysqli_query() C:\xampp\htdocs\WordPress\wp-includes\wp-db.php:2056
+[02-Mar-2021 19:21:46 UTC] Error Error on delete of 'C:\xampp\tmp\#sql4c288_39_1.MAI' (Errcode: 13 "Permission denied") de la base de datos de WordPress para la consulta SELECT  t.*, tt.*, tr.object_id FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id INNER JOIN wp_term_relationships AS tr ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy IN ('category', 'post_tag', 'post_format') AND tr.object_id IN (1) ORDER BY t.name ASC  realizada por wp_dashboard, do_meta_boxes, wp_dashboard_site_activity, wp_dashboard_recent_posts, WP_Query->__construct, WP_Query->query, WP_Query->get_posts, _prime_post_caches, update_post_caches, update_object_term_cache, wp_get_object_terms, get_terms, WP_Term_Query->query, WP_Term_Query->get_terms
+[02-Mar-2021 19:23:22 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\WordPress\wp-content\themes\miTemaTutorial\index.php on line 45
+[02-Mar-2021 19:26:14 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\WordPress\wp-content\themes\miTemaTutorial\index.php on line 45
