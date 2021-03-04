@@ -38,7 +38,7 @@
 
           <!-- paginacion -->
           <!-- car-body envuelve todo el widget -->
-            <div class="car-body"> 
+            <div class="card-body"> 
               <?php get_template_part('template-parts/content', 'paginacion'); ?> <!-- para acceder a la carpeta template-->
             </div>
           <!-- fin paginacion -->
