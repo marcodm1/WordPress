@@ -22,6 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 } */
 
 
+/* x todo esto copiado directamente x */
 #wp-calendar {width: 100%; }
 #wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
 #wp-calendar thead { font-size: 10px; }
@@ -32,3 +33,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #wp-calendar tbody .pad { background: none; }
 #wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
 #wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+/* x todo esto copiado directamente x */
+

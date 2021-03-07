@@ -7,7 +7,6 @@
             <?php 
               if ( have_posts() ) : while ( have_posts() ) : the_post(); 
             ?>
-                
             <!-- Entrada1 -->
             <div class="card-body">
                 <h2><?php the_title();/* aqui cargamos el titulo de cada entrada*/ ?></h2>     
@@ -34,43 +33,10 @@
         ?>  
     </div>
     <!-- fin Entradas -->
-    <!-- fin Blog -->
 
-    <div class="">
-        <?php // copiado de ruben, intente modificalo pero no lo consegui
-            $id_autor = get_the_author_meta($field = 'ID', $user_id = false); // esto hacerlo con una funcion de wp
-            $args = array(
-              'author' => $id_autor,
-              'posts_per_page' => 4,
-            );
-            $my_query = new WP_Query($args);
-
-            if ($my_query->have_posts() ): 
-        ?>
-            <h3 class="col-12">Posts mas recientes del autor: <h3>
-
-        <?php
-            while ($my_query->have_posts() ) :
-            $my_query->the_posts();
-        ?>
-
-        <div class="col-md-6 col-ms-12">
-            <p><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"> <?php the_title(); ?></a></p>
-        </div>
-
-        <?php
-                endwhile;
-            else:
-        ?>
-
-        <div class="col-12"> 
-            <p>No se encontraron mas post de este autor.</p>
-        </div>
-        <?php
-            endif;
-            wp_reset_postdata();
-        ?>
     </div>
+    </div>
+    <!-- fin Blog -->
 
 <?php
   get_footer(); // aqui pega todo el archivo del footer.php

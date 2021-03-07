@@ -5,6 +5,7 @@
         <!-- Entradas -->
         <div class="col-lg-9">
 
+        <?php get_search_form(); ?>
           
           <?php get_header();
             if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -36,7 +37,7 @@
               <?php endwhile; endif; 
           ?>  
 
-          <!-- paginacion -->
+          <!-- paginacion   copiada 100% de wordpress-->
           <!-- car-body envuelve todo el widget -->
             <div class="card-body"> 
               <?php get_template_part('template-parts/content', 'paginacion'); ?> <!-- para acceder a la carpeta template-->

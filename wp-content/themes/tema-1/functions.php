@@ -1,6 +1,6 @@
 <?php
 
-    require_once get_template_directory().'/template-parts/navbar.php'; // para cargar el archivo del menu superior
+    require_once get_template_directory() . '/template-parts/navbar.php'; // para cargar el archivo del menu superior
 
     function tema1_agragar_css_js() {
         wp_enqueue_style('style', get_stylesheet_uri()); // es nuestro css el uri, nos lleva a nuestro archivo automaticamenter
@@ -14,11 +14,16 @@
     // aqui llamamos a nuestra funcion
     add_action( 'wp_enqueue_scripts', 'tema1_agragar_css_js' );
 
-    // soporte de las imagenes
-    if (function_exists( 'add_theme_support' )) {
-        add_theme_support( 'post-thumbnails');
-     
+    
+
+    function tema1_setup() {
+        // soporte de las imagenes
+        if (function_exists( 'add_theme_support' )) {
+            add_theme_support( 'post-thumbnails');
+        }
+        add_theme_support( 'title-tag');
     }
+    add_action( 'after_setup_theme', 'tema1_setup' );
 
     // añadimos sidebar
 
